@@ -10,7 +10,8 @@ todos = functions.get_todos()
 
 st.title("My Todo App")
 st.subheader("This is my todo app.")
-st.write("This app is to increase your productivity.")
+st.write("This app is to increase your <b>productivity.</b>",
+         unsafe_allow_html=True)
 
 st.checkbox("Buy groceries.")
 st.checkbox("Take out the trash.")
